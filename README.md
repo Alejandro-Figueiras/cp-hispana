@@ -1,6 +1,6 @@
 # Documentación para Programación Competitiva
 
-El objetivo de este proyecto es documentar algoritmos y buenas prácticas de Programación Competitiva para el ICPC en Español. Nace con la idea de facilitar y traducir al Español, información interesante sobre el ICPC.  
+El objetivo de este proyecto es documentar algoritmos y buenas prácticas de Programación Competitiva para el ICPC en Español. Nace con la idea de facilitar y traducir a nuestro idioma, información interesante sobre esta disciplina.  
 Destaco que aprender y dominar el idioma inglés es muy importante, tanto los problemas como la inmensa mayoría de la documentación en esta industria se encuentra en ese idioma.
 
 La página oficial del proyecto es [cp-docs.vercel.app](https://cp-docs.vercel.app)

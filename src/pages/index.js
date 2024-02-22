@@ -33,10 +33,29 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+
+        <div className={styles.hero} data-theme="dark">
+          <div className={styles.heroInner}>
+            <Heading as="h1" className={styles.heroProjectTagline}>
+              <img
+                alt={'Docusaurus with Keytar'}
+                className={styles.heroLogo}
+                src='/img/docusaurus.png'
+                width="200"
+                height="200"
+              />
+              <span
+                className={styles.heroTitleTextHtml}
+              >
+                Documentación para <b>Programación Competitiva</b> en Español
+              </span>
+            </Heading>
+          </div>
+        </div>
+      {/* <HomepageHeader />
       <main>
         
-      </main>
+      </main> */}
     </Layout>
   );
 }
