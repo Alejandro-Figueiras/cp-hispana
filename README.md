@@ -1,41 +1,23 @@
-# Website
+# Documentación para Programación Competitiva
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+El objetivo de este proyecto es documentar algoritmos y buenas prácticas de Programación Competitiva para el ICPC en Español. Nace con la idea de facilitar y traducir al Español, información interesante sobre el ICPC.  
+Destaco que aprender y dominar el idioma inglés es muy importante, tanto los problemas como la inmensa mayoría de la documentación en esta industria se encuentra en ese idioma.
 
-### Installation
+La página oficial del proyecto es [cp-docs.vercel.app](https://cp-docs.vercel.app)
 
-```
-$ yarn
-```
+## Como contribuir
 
-### Local Development
+### El proyecto es de código abierto, cualquier aporte es bienvenido.
 
-```
-$ yarn start
-```
+Manteniendo la arquitectura del proyecto se debe hacer una pull request con los cambios que desea agregar / cambiar, esta será revisada y se decidirá si incluirla o no en el proyecto.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Bibliografía Básica
 
-### Build
+* [cp-algorithms.com](https://cp-algorithms.com)
+* Competitive Programmers Handbook
+* Introducción en C++ a la Programación Competitiva. 
 
-```
-$ yarn build
-```
+## Build Stack
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+* Built with Docusaurus
+* Deployed in Vercel
