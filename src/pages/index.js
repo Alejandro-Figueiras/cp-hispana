@@ -43,16 +43,16 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Fundamentals</th>
             </tr>
             <tr>
-              <th scope="row">Binary Exponentiation</th>
+              <th scope="row">Exponenciación binaria</th>
               <td>✅</td>
             </tr>
             <tr>
-              <th scope="row">Euclidean algorithm</th>
-              <td>❌</td>
+              <th scope="row">Algoritmo de Euclides</th>
+              <td>✅</td>
             </tr>
             <tr>
               <th scope="row">Extended Euclidean Algorithm</th>
@@ -66,7 +66,7 @@ export default function Home() {
               <th scope="row">Fibonacci Numbers</th>
               <td>❌</td>
             </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Números Primos</th>
             </tr>
             <tr>
@@ -81,7 +81,7 @@ export default function Home() {
               <th scope="row">Integer factorization</th>
               <td>❌</td>
             </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Number-theoretic functions</th>
             </tr>
             <tr>
@@ -92,13 +92,13 @@ export default function Home() {
               <th scope="row">Number of divisors / sum of divisors</th>
               <td>❌</td>
             </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Artimetica Modular</th>
             </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Sistemas numéricos</th>
             </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.7)"}}>
+            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
               <th scope="row" colSpan={2}>⭐ Misc</th>
             </tr>
             
