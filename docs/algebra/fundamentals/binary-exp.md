@@ -98,8 +98,8 @@ long long binpow(long long a, long long b) {
 
 **Problema:**
 Calcular $x^n \bmod m$.
-Esta es una operación muy común. Por ejemplo, se utiliza en el cálculo de la [inversa multiplicativa modular](module-inverse.md).
-<!-- TODO link this -->
+Esta es una operación muy común. Por ejemplo, se utiliza en el cálculo de la _**inversa multiplicatica modular**_.
+<!-- TODO link this [inversa multiplicativa modular](module-inverse.md) -->
 
 **Solución:**
 Como sabemos que el operador módulo no interfiere con las multiplicaciones ($a \cdot b \equiv (a \bmod m) \cdot (b \bmod m) \pmod m$), podemos utilizar directamente el mismo código, y simplemente sustituir cada multiplicación por una multiplicación modular:
@@ -121,8 +121,8 @@ long long binpow(long long a, long long b, long long m) {
 **Nota:**
 Es posible acelerar este algoritmo para grandes $b >> m$.
 Si $m$ es un número primo $x^n \equiv x^{n \bmod (m-1)} \pmod{m}$ para $m$ primo, y $x^n \equiv x^{n \bmod{\phi(m)}} \pmod{m}$ para $m$ compuesto.
-Esto se deduce directamente del pequeño teorema de Fermat y del teorema de Euler, véase el artículo sobre [Modular Inverses](module-inverse.md#fermat-euler) para más detalles.
-<!-- TODO link this -->
+Esto se deduce directamente del pequeño teorema de Fermat y del teorema de Euler, véase el artículo sobre **_Modular Inverses_** para más detalles.
+<!-- TODO link this [Modular Inverses](module-inverse.md#fermat-euler)-->
 
 
 ### Cálculo efectivo de los números de Fibonacci
@@ -130,7 +130,8 @@ Esto se deduce directamente del pequeño teorema de Fermat y del teorema de Eule
 **Problema:** Calcular $n$-ésimo número de Fibonacci $F_n$.
 
 <!-- TODO link this -->
-**Solución:** Para más detalles, véase el artículo [Números de Fibonacci](fibonacci-numbers.md).
+**Solución:** Para más detalles, véase el artículo **_Numeros de Fibonacci_**
+<!--  [Números de Fibonacci](fibonacci-numbers.md). -->
 Nosotros sólo vamos a dar una visión general del algoritmo.
 Para calcular el siguiente número de Fibonacci, sólo se necesitan los dos anteriores, ya que $F_n = F_{n-1} + F_{n-2}$.
 Podemos construir una matriz de $2 \times 2$ que describa esta transformación:
@@ -245,8 +246,8 @@ Ahora, una vez que cada transformación se describe como una matriz, la secuenci
 
 **Problema:** Dado un grafo dirigido no ponderado de $n$ vértices, encuentra el número de caminos de longitud $k$ desde cualquier vértice $u$ a cualquier otro vértice $v$.
 
-<!-- TODO fix link -->
-**Solución:** Este problema se considera con más detalle en [otro artículo](../graph/fixed_length_paths.md). El algoritmo consiste en elevar la matriz de adyacencia $M$ del grafo (una matriz donde $m_{ij} = 1$ si hay una arista de $i$ a $j$, o $0$ en caso contrario) a la $k$-ésima potencia. Ahora $m_{ij}$ será el número de caminos de longitud $k$ de $i$ a $j$. La complejidad temporal de esta solución es $O(n^3 \log k)$.
+<!-- TODO fix link [otro artículo](../graph/fixed_length_paths.md). -->
+**Solución:** Este problema se considera con más detalle en _**otro articulo.**_ El algoritmo consiste en elevar la matriz de adyacencia $M$ del grafo (una matriz donde $m_{ij} = 1$ si hay una arista de $i$ a $j$, o $0$ en caso contrario) a la $k$-ésima potencia. Ahora $m_{ij}$ será el número de caminos de longitud $k$ de $i$ a $j$. La complejidad temporal de esta solución es $O(n^3 \log k)$.
 
 **Nota:** En ese mismo artículo, se considera otra variación de este problema: cuando las aristas están ponderadas y se requiere encontrar el camino de peso mínimo que contenga exactamente $k$ aristas. Como se muestra en ese artículo, este problema también se resuelve exponenciando la matriz de adyacencia. La matriz tendría el peso de la arista de $i$ a $j$, o $\infty$ si no hay tal arista.
 En lugar de la operación habitual de multiplicar dos matrices, se debe utilizar una modificada:
