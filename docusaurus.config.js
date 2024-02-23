@@ -70,7 +70,7 @@ const config = {
         title: 'CP Docs',
         logo: {
           alt: 'CP Docs',
-          src: 'img/logo.svg',
+          src: 'img/icon.png',
         },
         items: [
           {

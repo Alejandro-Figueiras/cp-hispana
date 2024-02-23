@@ -6,27 +6,6 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          Documentación en Español para Programación Competitiva
-        </Heading>
-        <p className="hero__subtitle">Powered by Docusaurus</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Empecemos!
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -40,9 +19,9 @@ export default function Home() {
               <img
                 alt={'Docusaurus with Keytar'}
                 className={styles.heroLogo}
-                src='/img/docusaurus.png'
-                width="200"
-                height="200"
+                src='/img/globo-blanco.png'
+                width="250"
+                height="250"
               />
               <span
                 className={styles.heroTitleTextHtml}
