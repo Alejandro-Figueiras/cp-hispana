@@ -10,14 +10,14 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`CP Español`}
+      title={`Inicio`}
       description="Documentación para Programación Competitiva en Español">
 
         <div className={styles.hero} data-theme="dark">
           <div className={styles.heroInner}>
             <Heading as="h1" className={styles.heroProjectTagline}>
               <img
-                alt={'Docusaurus with Keytar'}
+                alt={'Globo'}
                 className={styles.heroLogo}
                 src='/img/globo-blanco.png'
                 width="250"

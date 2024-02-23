@@ -1,4 +1,4 @@
-![as](./header.png)
+![as](./static/img/header.png)
 
 El objetivo de este proyecto es documentar algoritmos y buenas prácticas de Programación Competitiva para el ICPC en Español. Nace con la idea de facilitar y traducir a nuestro idioma, información interesante sobre esta disciplina.  
 Destaco que aprender y dominar el idioma inglés es muy importante, tanto los problemas como la inmensa mayoría de la documentación en esta industria se encuentra en ese idioma.
