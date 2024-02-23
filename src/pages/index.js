@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import { roadmaps } from './roadmaps.json'
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -32,79 +33,44 @@ export default function Home() {
           </div>
         </div>
         <main className={styles.main}>
-        <table summary="Roadmap Algebra">
-          <caption>
-            <h2>Roadmap: Algebra</h2>
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Página</th>
-              <th scope="col">Traducida</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Fundamentals</th>
-            </tr>
-            <tr>
-              <th scope="row">Exponenciación binaria</th>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <th scope="row">Algoritmo de Euclides</th>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <th scope="row">Extended Euclidean Algorithm</th>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <th scope="row">Linear Diophantine Equation¶</th>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <th scope="row">Fibonacci Numbers</th>
-              <td>❌</td>
-            </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Números Primos</th>
-            </tr>
-            <tr>
-              <th scope="row">Sieve of Eratosthenes</th>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <th scope="row">Primality tests</th>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <th scope="row">Integer factorization</th>
-              <td>❌</td>
-            </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Number-theoretic functions</th>
-            </tr>
-            <tr>
-              <th scope="row">Euler's totient function</th>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <th scope="row">Number of divisors / sum of divisors</th>
-              <td>❌</td>
-            </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Artimetica Modular</th>
-            </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Sistemas numéricos</th>
-            </tr>
-            <tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
-              <th scope="row" colSpan={2}>⭐ Misc</th>
-            </tr>
-            
-          </tbody>
-        </table>
-
+          {
+            roadmaps.map(roadmap => 
+              <table summary={roadmap.title}>
+                <caption>
+                  <h2>{roadmap.title}</h2>
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Página</th>
+                    <th scope="col">Traducida</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    roadmap.categorias.map(cat => {
+                      const items = [];
+                      if (cat.title) {
+                        items.push(<tr style={{background: "rgba(0, 0, 0, 0.25)"}}>
+                          <th scope="row" colSpan={2}>⭐ {cat.title}</th>
+                        </tr>)
+                        cat.items.map(item => {
+                          items.push(<tr>
+                            <th scope="row">
+                              {(item.link) 
+                              ? <a href={item.link}>{item.title}</a>
+                              : item.title}
+                              </th>
+                            <td>{item.translated ? '✅': '❌'}</td>
+                          </tr>)
+                        })
+                      }
+                      return items
+                    })
+                  }
+                </tbody>
+              </table>
+            )
+          }
         </main>
     </Layout>
   );

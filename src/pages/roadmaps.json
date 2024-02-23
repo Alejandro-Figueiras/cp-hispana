@@ -1,0 +1,86 @@
+{
+  "roadmaps": [
+    {
+      "title": "Roadmap: Algebra",
+      "categorias": [
+        {
+          "title": "Fundamentos",
+          "items": [
+            {
+              "title": "Exponenciación binaria",
+              "translated": true,
+              "link": "/algebra/fundamentals/binary-exp"
+            },
+            {
+              "title": "Algoritmo de Euclides",
+              "translated": true,
+              "link": "/algebra/fundamentals/euclid-algorithm"
+            },
+            {
+              "title": "Extended Euclidean Algorithm",
+              "translated": false,
+              "link": ""
+            },
+            {
+              "title": "Linear Diophantine Equation",
+              "translated": false,
+              "link": ""
+            },
+            {
+              "title": "Fibonacci Numbers",
+              "translated": false,
+              "link": ""
+            }
+          ]
+        },
+        {
+          "title": "Números Primos",
+          "items": [
+            {
+              "title": "Sieve of Eratosthenes",
+              "translated": false,
+              "link": ""
+            },
+            {
+              "title": "Primality tests",
+              "translated": false,
+              "link": ""
+            },
+            {
+              "title": "Integer factorization",
+              "translated": false,
+              "link": ""
+            }
+          ]
+        },
+        {
+          "title": "Number-theoretic functions",
+          "items": [
+            {
+              "title": "Euler's totient function",
+              "translated": false,
+              "link": ""
+            },
+            {
+              "title": "Number of divisors / sum of divisors",
+              "translated": false,
+              "link": ""
+            }
+          ]
+        },
+        {
+          "title": "Artimética Modular",
+          "items": []
+        },
+        {
+          "title": "Artimética Modular",
+          "items": []
+        },
+        {
+          "title": "Misc",
+          "items": []
+        }
+      ]
+    }
+  ]
+}
