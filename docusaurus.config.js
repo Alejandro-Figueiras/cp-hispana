@@ -75,9 +75,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'algebraSidebar',
             position: 'left',
-            label: 'Algoritmos',
+            label: 'Álgebra',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'graphsSidebar',
+            position: 'left',
+            label: 'Grafos',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
