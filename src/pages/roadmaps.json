@@ -17,9 +17,9 @@
               "link": "/algebra/fundamentals/euclid-algorithm"
             },
             {
-              "title": "Extended Euclidean Algorithm",
-              "translated": false,
-              "link": ""
+              "title": "Algoritmo de Euclides Extendido",
+              "translated": true,
+              "link": "/algebra/fundamentals/extended-euclid-algorithm"
             },
             {
               "title": "Linear Diophantine Equation",
