@@ -93,12 +93,6 @@ const config = {
             position: 'left',
             label: 'Álgebra',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'graphsSidebar',
-            position: 'left',
-            label: 'Grafos',
-          },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
