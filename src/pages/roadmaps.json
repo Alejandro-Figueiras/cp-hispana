@@ -70,11 +70,13 @@
         },
         {
           "title": "Artimética Modular",
-          "items": []
-        },
-        {
-          "title": "Artimética Modular",
-          "items": []
+          "items": [
+            {
+              "title": "Divisibilidad y Congruencias",
+              "translated": false,
+              "link": "/algebra/modular-arithmetic/divisibility-and-congruence"
+            }
+          ]
         },
         {
           "title": "Misc",
