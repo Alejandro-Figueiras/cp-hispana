@@ -1,3 +1,8 @@
+--
+tags:
+  - author:karelantonio
+  - divisibility
+--
 # Divisibilidad y Congruencias
 
 Cuando estamos restringidos a trabajar en el conjunto de números enteros ($ \mathbb Z $) es necesario crear varios conceptos que permitan trabajar con ellos mas fácilmente. De estos conceptos, es esencial entender la divisibilidad.
@@ -39,11 +44,11 @@ $$ a | (b \cdot c), \space mcd(a,b)=1 \rightarrow a | c $$
 
 Definicion 2: Sean $a,m$ números enteros y para algún $0 \le r < |m|$ (entero no negativo) se cumple que $m | a-r$ entonces $r$ es el *resto de $a$ módulo $m$*, o el resto de dividir $a$ entre $m$, y se escribe: $a \mod m = r$
 
-Definición 3: Sean $a,b,m$ números enteros y $m$ positivo, decimos que $a$ es congruente con $b$ módulo $m$ si $m | (a-b)$ y se escribe: $a \equiv b \space (\mod m)$ o tambie: $a \equiv_m b$ Tambien se puede argumentar porque $a$ y $b$ tienen el mismo residuo módulo $m$.
+Definición 3: Sean $a,b,m$ números enteros y $m$ positivo, decimos que $a$ es congruente con $b$ módulo $m$ si $m | (a-b)$ y se escribe: $a \equiv b \space \pmod m$ o tambie: $a \equiv_m b$ Tambien se puede argumentar porque $a$ y $b$ tienen el mismo residuo módulo $m$.
 
 Por ejemplo, el resto de dividir $3$ entre $2$ es $1$, porque $2 | 3-1$, de igual forma, el resto de dividir $5$ entre $2$ es $1$, porque $2 | 5-1$
 
-De ahí podemos decir que $3$ es congruente con $5$ módulo $2$: $$3 \equiv 5 \space (\mod 2)$$ porque tienen el mismo residuo, asi que $2|(5-3)$
+De ahí podemos decir que $3$ es congruente con $5$ módulo $2$: $$3 \equiv 5 \space \pmod 2$$ porque tienen el mismo residuo, asi que $2|(5-3)$
 
 ## Propiedades de los residuos
 
@@ -51,7 +56,7 @@ De ahí podemos decir que $3$ es congruente con $5$ módulo $2$: $$3 \equiv 5 \s
 * $a\times b \mod m = (a \mod m) \times (b \mod m) \mod m$
 * $-a \mod m = m-a \mod m$
 * $m \mod m = 0$
-* $\frac {a} {b} \mod m$ = $a^times b^{-1} \mod m$ (Ver la sección de inverso modular)
+* $\frac {a} {b} \mod m$ = $a \times b^{-1} \mod m$ (Ver la sección de inverso modular)
 
 ## Clases de números
 
@@ -75,7 +80,7 @@ Entonces: $$a \equiv_m c$$
 
 * Sean las dos congruencias: $$a \equiv_m b$$ $$x \equiv _m y$$ Entonces: $$ a+x \equiv_m b+y$$ $$ a\cdot x \equiv_m b\cdot y$$
 
-* Para todo $a$ congruente con $b$: $$ a \equiv_m (a \mod m) \equiv_m b $$
+* Para todo $a$ congruente con $b$: $$ a \equiv_m (a \bmod m) \equiv_m b $$
 
 Todas estas propiedades nos permite trabajar con las congruencias *casi* como igualdades
 
@@ -93,7 +98,7 @@ $$ 24\cdot d = t-d$$
 $$ t \equiv_{24} d $$
 Ahora le sumamos $50$ en ambos lados (que es lo que nos piden) y sea $f$ la hora final:
 $$ f \equiv_{24} t+50 \equiv_{24} \equiv 13+50$$
-$$ f \equiv_{24} 63 \equiv (63\mod 24)$$
+$$ f \equiv_{24} 63 \equiv (63\bmod 24)$$
 $$ f \equiv_{24}5 $$
 
 Asi que la respuesta sería: dentro de 50 horas, serán las 5 AM.
@@ -114,7 +119,7 @@ Por lo tanto, no existe ningún valor que cumpla el criterio.
 
 Solución:
 
-$$ s \equiv 123 \times 4567 (\mod 10)$$
-$$ s \equiv (123 \mod 10) \times (4567) \equiv 3\times 7 \equiv 21 \equiv 1 (\mod 10) $$
+$$ s \equiv 123 \times 4567 \pmod {10}$$
+$$ s \equiv (123 \bmod 10) \times (4567 \bmod 10) \equiv 3\times 7 \equiv 21 \equiv 1 \pmod {10} $$
 
 El dígito de las unidades es $1$
