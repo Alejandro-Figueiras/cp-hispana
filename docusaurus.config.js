@@ -10,12 +10,12 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CP Docs',
+  title: 'CP Hispana',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cp-docs.vercel.app/',
+  url: 'https://cp-hispana.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Alejandro-Figueiras', // Usually your GitHub org/user name.
-  projectName: 'cp-docs', // Usually your repo name.
+  projectName: 'cp-hispana', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -82,9 +82,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/header.jpg',
       navbar: {
-        title: 'CP Docs',
+        title: 'CP Hispana',
         logo: {
-          alt: 'CP Docs',
+          alt: 'CP Hispana',
           src: 'img/icon.png',
         },
         items: [
@@ -96,7 +96,7 @@ const config = {
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/Alejandro-Figueiras/cp-docs',
+            href: 'https://github.com/Alejandro-Figueiras/cp-hispana',
             label: 'GitHub',
             position: 'right',
           },

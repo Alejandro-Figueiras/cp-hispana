@@ -37,9 +37,9 @@
           "title": "Números Primos",
           "items": [
             {
-              "title": "Sieve of Eratosthenes",
-              "translated": false,
-              "link": ""
+              "title": "Criba de Eratóstenes",
+              "translated": true,
+              "link": "/algebra/numeros_primos/criba_eratosthenes"
             },
             {
               "title": "Primality tests",
