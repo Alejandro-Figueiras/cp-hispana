@@ -1,8 +1,8 @@
---
+---
 tags:
   - author:karelantonio
   - divisibility
---
+---
 # Divisibilidad y Congruencias
 
 Cuando estamos restringidos a trabajar en el conjunto de números enteros ($ \mathbb Z $) es necesario crear varios conceptos que permitan trabajar con ellos mas fácilmente. De estos conceptos, es esencial entender la divisibilidad.
