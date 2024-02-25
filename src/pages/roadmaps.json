@@ -73,7 +73,7 @@
           "items": [
             {
               "title": "Divisibilidad y Congruencias",
-              "translated": false,
+              "translated": true,
               "link": "/algebra/modular-arithmetic/divisibility-and-congruence"
             }
           ]
