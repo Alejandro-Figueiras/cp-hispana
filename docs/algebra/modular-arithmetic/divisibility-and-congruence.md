@@ -9,23 +9,25 @@ Cuando estamos restringidos a trabajar en el conjunto de números enteros ($ \ma
 
 Definición 1: Decimos que un número es divisible por otro cuando al realizar el procedimiento habitual de división el resto o residuo es 0 (se retomará esto mas tarde), tambien podemos decir que un número es multiplo o factor de otro.
 
-Sea $a,b$ números enteros, la expresión $$a | b$$ se lee: $a$ divide a $b$, y es posible si y solo si existe otro entero $k$ tal que el número $b$ se puede escribir en funcion de $a$ como $$a\cdot k=b$$ Decimos que un número no divide a otro cuando no existe tal $k$: $$a \not |b$$
+Sea $a,b$ números enteros, la expresión $$a | b$$ se lee: $a$ divide a $b$, y es posible si y solo si existe otro entero $k$ tal que el número $b$ se puede escribir en funcion de $a$ como $$a\cdot k=b$$ Decimos que un número no divide a otro cuando no existe tal $k$: $$a \not | \space\space b$$
 
 ## Propiedades de la divisibilidad
 
-* Todos los números son divisibles por la unidad y por sí mismos, cuando estos son sus únicos divisores se dice que es primo el número:
-
-$$ 1 | b, \space b|b$$
+* Todos los números son divisibles por la unidad y por sí mismos, cuando estos son sus únicos divisores se dice que es primo el número: $1 | b, \space b|b$
 
 * $a|b$ si y solo si $b/a \in \mathbb Z$
 
 * Un numero $a$ divide a $b$ si el valor absoluto de el primero divide al valor absoluto del segundo:
 
-$$ |a| \space \space | \space \space |b| $$
+$$
+|a| \space \space | \space \space |b| 
+$$
 
 * Dados tres numeros, $a,b,c$ tal que:
 
-$$ a|b, \space \space b|c \rightarrow a|c $$
+$$
+a|b, \space \space b|c \rightarrow a|c
+$$
 
 * Si $a|b$ entonces para cualquier $k$ se cumple: $a|(b\cdot k)$
 
@@ -56,7 +58,7 @@ De ahí podemos decir que $3$ es congruente con $5$ módulo $2$: $$3 \equiv 5 \s
 * $a\times b \mod m = (a \mod m) \times (b \mod m) \mod m$
 * $-a \mod m = m-a \mod m$
 * $m \mod m = 0$
-* $\frac {a} {b} \mod m$ = $a \times b^{-1} \mod m$ (Ver la sección de inverso modular)
+* $\frac {a} {b} \mod m$ = $a \times b^{-1}\mod m$ (Ver la sección de inverso modular)
 
 ## Clases de números
 
@@ -115,7 +117,7 @@ $$ 2^2 \equiv 4 \equiv 1 \not \equiv 2 $$
 
 Por lo tanto, no existe ningún valor que cumpla el criterio.
 
-### 3. Dígito mas a la derecha de calcular: $123\times 4567$
+### 3. Dígito más a la derecha de calcular: $123\times 4567$
 
 Solución:
 
