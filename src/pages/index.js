@@ -5,10 +5,11 @@ import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import { roadmaps } from './roadmaps.json'
+import roadmaps from './roadmaps.json'
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const roadmapsList = roadmapsList.roadmaps
   return (
     <Layout
       title={`Inicio`}
@@ -34,7 +35,7 @@ export default function Home() {
         </div>
         <main className={styles.main}>
           {
-            roadmaps.map(roadmap => 
+            roadmapsList.map(roadmap => 
               <table summary={roadmap.title}>
                 <caption>
                   <h2>{roadmap.title}</h2>

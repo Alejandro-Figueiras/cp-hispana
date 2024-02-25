@@ -42,6 +42,11 @@
               "link": "/algebra/numeros_primos/criba_eratosthenes"
             },
             {
+              "title": "Criba Lineal",
+              "translated": true,
+              "link": "/algebra/numeros_primos/criba_lineal_primos"
+            },
+            {
               "title": "Primality tests",
               "translated": false,
               "link": ""
