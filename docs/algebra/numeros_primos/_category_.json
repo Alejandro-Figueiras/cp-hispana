@@ -1,0 +1,11 @@
+{
+  "position": 3,
+  "label": "Números Primos",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Álgebra: Números Primos"
+  }
+}
