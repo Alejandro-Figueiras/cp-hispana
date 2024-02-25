@@ -9,7 +9,7 @@ import roadmaps from './roadmaps.json'
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  const roadmapsList = roadmapsList.roadmaps
+  const roadmapsList = roadmaps.roadmaps
   return (
     <Layout
       title={`Inicio`}
